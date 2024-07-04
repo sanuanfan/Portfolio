@@ -283,3 +283,23 @@ body {
     align-items: center;
 
 }
+#project{
+    width: 100%;
+    height: 100vh;
+    background-color:#51e3f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color:#51e3f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
