@@ -7,11 +7,23 @@
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "QUDKlcbwblw2ls4sB",
+  });
+})();
+</script>
+<script src="index.js"></script>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="sub-container">
+    <div class="main-container" id="home">
+        <div class="sub-container" >
             <div class="navbar">
                 <div class="name">
                     <a href="" class="sanu">SANU</a>
@@ -35,13 +47,17 @@
                         officia earum
                         minima inventore tempore dolorem ab ipsa!</p>
                     <div class="buttons">
-                        <a href="">
-                            <div class="icon" style="margin-left: 0;"><i class='bx bxl-instagram-alt'></i></div>
+                        <a href="https://www.instagram.com/sanu_anfan?igsh=MXdtd3NjZDBvZHdvcw%3D%3D&utm_source=qr">
+                            <div class="icon" style="margin-left: 0;">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </div>
                         </a>
-                        <a href="">
-                            <div class="icon"><i class='bx bxl-github'></i></div>
+                        <a href="https://github.com/sanuanfan">
+                            <div class="icon">
+                                <i class='bx bxl-github'></i>
+                            </div>
                         </a>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/sanu-anfan-49b462251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&original_referer=https%3A%2F%2Fwww.encurtador.dev%2F">
                             <div class="icon"><i class='bx bxl-linkedin-square'></i></div>
                         </a>
                     </div>
@@ -55,7 +71,12 @@
                     <img src="Image/Screenshot 2024-07-03 154548.png" alt="" class="pic">
                 </div>
             </div>
-
+            <div class="up-button">
+                <a href="#home" style="font-size: 30px;"><div>
+                    <i class='bx bx-chevrons-up'></i>
+                </div>
+            </a>
+            </div>
         </div>
 
     </div>
@@ -121,20 +142,20 @@
                         <h1>HTML</h1>
                     </div>
                     <div class="skill-content">
-                        <p>I have a strong foundation in HTML, the core language for 
-                            creating web pages. I excel at writing clean and well-structured 
+                        <p>I have a strong foundation in HTML, the core language for
+                            creating web pages. I excel at writing clean and well-structured
                             HTML code, ensuring that web pages are accessible and optimized for
-                             search engines. My skills include creating responsive designs that
-                              look great on any device, developing user-friendly web forms, and
-                               utilizing modern HTML features to enhance website functionality. 
-                               I focus on crafting HTML that improves both user experience and
-                                search engine visibility.</p>
+                            search engines. My skills include creating responsive designs that
+                            look great on any device, developing user-friendly web forms, and
+                            utilizing modern HTML features to enhance website functionality.
+                            I focus on crafting HTML that improves both user experience and
+                            search engine visibility.</p>
                     </div>
                 </div>
                 <div class="skill-box">
                     <a href="">
                         <div class="skill-icon">
-                            <i class='bx bxs-file-css' ></i>
+                            <i class='bx bxs-file-css'></i>
                         </div>
                     </a>
                     <div>
@@ -157,12 +178,46 @@
     </div>
     <div id="project">
         <div class="sub-container">
+            <div class="heading">
+                <p style="color: white;">Latest <span style="color: #00EDFD;">Project</span></p>
+            </div>
+            <div class="skill-container">
+                <div class="skill-box" style="width: 40%;">
+                    <div class="project-image">
+                        <a href="https://student-managment-system-client.vercel.app/">
+                            <img src="Image/Screenshot 2024-07-04 205750.png" alt="" class="project-image">
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-box" style="width: 40%;">
+                    <div class="project-image">
+                        <a href=""><img src="Image/Dashbord.png" alt="" class="project-image">
+                        </a>
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
     <div id="contact">
         <div class="sub-container">
-
+            <div class="heading">
+                <p style="color: white;">Contact <span style="color: #00EDFD;">Me !</span></p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <form action="">
+                        <input type="text" placeholder="Full Name" class="input" id="name">
+                        <input type="text" placeholder="Email Address" class="input" id="email">
+                        <input type="text" placeholder="Mobile Number" class="input" id="mobile">
+                        <input type="text" placeholder="Email Subject" class="input" id="subject">
+                        <input type="text" placeholder="Your Message" class="input"
+                            style="width: 91%;height: 300px;padding-bottom: 250px;" id="message">
+                           <button class="contact-button" onclick="sendMail()" style="margin-left: 280px;margin-top: 10px;">Send mail</button>
+                    </form>
+                   
+                </div>
+            </div>
         </div>
     </div>
 </body>
