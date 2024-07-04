@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: aqua;
+    background: linear-gradient(to top,#00EDFD,#063d44,#1e222c);
 
 }
 
@@ -165,7 +166,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background: linear-gradient(to top,#1e222c,#063d44,#00EDFD);
 }
 .about-image{
     width: 50%;
@@ -236,6 +237,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom,#1e222c,#063d44,#00EDFD);
+
 
 }
 .skill-container{
@@ -290,6 +293,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top,#1e222c,#063d44,#00EDFD);
+
 
 }
 .project-image{
@@ -309,6 +314,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom,#1e222c,#063d44,#00EDFD);
+
 }
 .contact-container{
     width: 100%;
