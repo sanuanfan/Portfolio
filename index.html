@@ -29,7 +29,7 @@
                     <a href="" class="sanu">SANU</a>
                 </div>
                 <div class="items">
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#project">Project</a>
@@ -72,10 +72,11 @@
                 </div>
             </div>
             <div class="up-button">
-                <a href="#home" style="font-size: 30px;"><div>
+                <a href="#home">
+                    <div>
                     <i class='bx bx-chevrons-up'></i>
                 </div>
-            </a>
+                </a>
             </div>
         </div>
 
@@ -83,11 +84,23 @@
     <div id="about">
 
         <div class="sub-container">
+            <div class="navbar">
+                <div class="name">
+                    <a href="" class="sanu">SANU</a>
+                </div>
+                <div class="items">
+                    <a href="">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
 
             <div class="about-body">
                 <div class="about-image">
                     <img src="Image/Screenshot 2024-07-03 154548.png" alt="" class="pic"
-                        style="height: 300px;width: 300px;">
+                        style="height: 300px;width: 300px; margin-bottom: 100px;">
                 </div>
                 <div class="about-content">
                     <p style="font-size: 45px;font-weight: 800;">About <span style="color: #00EDFD;">Me</span></p>
@@ -206,13 +219,13 @@
             </div>
             <div class="contact-container">
                 <div class="contact-card">
-                    <form action="">
-                        <input type="text" placeholder="Full Name" class="input" id="name">
-                        <input type="text" placeholder="Email Address" class="input" id="email">
-                        <input type="text" placeholder="Mobile Number" class="input" id="mobile">
-                        <input type="text" placeholder="Email Subject" class="input" id="subject">
+                    <form>
+                        <input type="text" placeholder="Full Name" class="input" id="name" required>
+                        <input type="text" placeholder="Email Address" class="input" id="email" required>
+                        <input type="text" placeholder="Mobile Number" class="input" id="mobile" required>
+                        <input type="text" placeholder="Email Subject" class="input" id="subject" required>
                         <input type="text" placeholder="Your Message" class="input"
-                            style="width: 91%;height: 300px;padding-bottom: 250px;" id="message">
+                            style="width: 91%;height: 300px;padding-bottom: 250px;" id="message" required>
                            <button class="contact-button" onclick="sendMail()" style="margin-left: 280px;margin-top: 10px;">Send mail</button>
                     </form>
                    

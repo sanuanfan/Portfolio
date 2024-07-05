@@ -18,7 +18,7 @@ emailjs.send(serviceID,templateID,params)
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("Your mail was sent successfully")
+        alert("Your mail sent successfully")
     }
 )
 .catch((err)=>console.log(err));
