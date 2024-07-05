@@ -368,8 +368,10 @@ body {
     align-items: center;
     position: fixed;
     bottom: 25px;
-    right: 82px;
+    right: 15px;
     border-radius: 50%;
+    box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.5);
+
 }
 .up-button a{
     text-decoration: none;

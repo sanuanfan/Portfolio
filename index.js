@@ -1,4 +1,13 @@
 function sendMail(){
+    if(
+        document.getElementById("name").value.length > 0 && 
+        document.getElementById("email").value.length > 0 && 
+        document.getElementById("mobile").value.length > 0 && 
+        document.getElementById("subject").value.length > 0 && 
+        document.getElementById("message").value.length > 0
+    
+    
+    ){
     var params ={
         name : document.getElementById("name").value,
         email:document.getElementById("email").value,
@@ -22,5 +31,9 @@ emailjs.send(serviceID,templateID,params)
     }
 )
 .catch((err)=>console.log(err));
+}
+else{
+    alert("Fill all the field before sending")
+}
 }
 
