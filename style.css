@@ -441,7 +441,7 @@ body {
     }
     
 }
-@media screen and  (max-width:400px){
+@media screen and  (max-width:4500px ){
     .about-image{
         display: none;
     }
